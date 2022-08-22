@@ -1,0 +1,40 @@
+#include<stdio.h>
+int main()
+{
+	int a[5],b[5],c[5],i,min,x=-1,time=0;
+	for(i=0;i<5;i++)
+	{
+		scanf("%d",&a[i]);
+		if(a[i]<10)
+		{
+			b[i]=a[i];
+			c[i]=10;
+		}
+		else
+		{
+			b[i]=a[i]%10;
+			if(b[i]==0)
+				c[i]=a[i]/10;
+			else
+				c[i]=a[i]/10+1;
+		}
+	}
+	min=9;
+	for(i=0;i<5;i++)
+	{
+		if(min>b[i]&&b[i]!=0)
+		{
+			min=b[i];
+			x=i;
+		}
+	}
+	for(i=0;i<5;i++)
+	if(i!=x)
+		if(a[i]<10)
+			time+=c[i];
+		else
+			time+=c[i]*10;
+	time+=a[x];
+	printf("%d",time);
+	return 0;
+} 

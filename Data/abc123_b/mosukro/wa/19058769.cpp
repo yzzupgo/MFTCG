@@ -1,0 +1,25 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main(void)
+{
+    long long a[5];
+    long long  ans=0;
+    cin >> a[0] >> a[1] >> a[2] >> a[3] >> a[4];
+
+    long long min = 123;
+
+    for(int i=0;i<5;i++)
+    {
+        long long tmp = a[i]%10;
+        if(tmp<min && tmp!=0) min=tmp;
+        if(tmp==0) ans+=a[i];
+        else ans+=((a[i]/10)+1)*10;
+    }
+
+    ans-=(10-min);
+    
+    cout << ans << endl;
+
+    return 0;
+}

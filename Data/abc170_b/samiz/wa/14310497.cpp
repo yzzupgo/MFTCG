@@ -1,0 +1,15 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main(){
+double x, y;
+cin >> x >> y;
+double a = 2 * x - y * 0.5;
+double b = y * 0.5 - x;
+if (a > 0 && b > 0){
+cout << "Yes" << endl;
+}
+else{
+cout << "No" << endl;
+}
+return 0;
+}
