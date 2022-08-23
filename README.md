@@ -2,7 +2,7 @@
 
 ## INTRODUCTION
 
-we propose the novice program-oriented Multi-Objective Optimization-Based Fault-Localization Oriented Test Case Generation (MFTCG) for automatically generating test inputs. Specifically, we use multi-objective optimization algorithms to evolve the test case in terms of both fault localization and faulty code detection capability. 
+We propose the novice program-oriented Multi-Objective Optimization-Based Fault-Localization Oriented Test Case Generation (MFTCG) for automatically generating test inputs. Specifically, we use multi-objective optimization algorithms to evolve the test case in terms of both fault localization and faulty code detection capability. 
 
 ##  DIRECTORY
 ```
